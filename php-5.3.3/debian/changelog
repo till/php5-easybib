@@ -1,0 +1,5 @@
+php (5.3.3-0easybib1) unstable; urgency=low
+
+  * Initial release
+
+ -- Till Klampaeckel <till@php.net>  Mon, 18 Oct 2010 00:47:19 +0200
