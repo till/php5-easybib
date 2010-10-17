@@ -1,4 +1,4 @@
-Source: php5
+Source: php
 Section: unknown
 Priority: extra
 Maintainer: Till Klampaeckel <till@php.net>
@@ -7,7 +7,7 @@ Standards-Version: 3.8.3
 Homepage: http://github.com/till/PHP-Ubuntu-Package
 
 Package: php5-easybib
-Architecture: any
+Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, openssl, build-essential, bison, re2c, libtool, help2man, autoconf, automake
-Description: This is a custom PHP 5.3.3 package with FPM enabled.
+Description: This is a custom amd64 PHP 5.3.3 package with FPM enabled.
  The following extensions are compiled in: ...
