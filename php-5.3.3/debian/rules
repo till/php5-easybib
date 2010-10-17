@@ -16,22 +16,22 @@ PHP_GROUP=www-data
 OPTS=--with-config-file-path=$PHP_PREFIX/etc \
 	--with-config-file-scan-dir=$PHP_PREFIX/etc/php \
 	--prefix=$PHP_PREFIX \
-	--with-pear=$PHP_PREFIX/pear
-	--enable-sockets
-	--enable-soap
-	--with-openssl
-	--disable-posix
-	--without-sqlite
-	--without-sqlite3
-	--with-mysqli=mysqlnd
-	--disable-posix
-	--disable-phar
-	--disable-pdo
-	--enable-pcntl
-	--with-curl
-	--enable-fpm
-	--with-fpm-user=$PHP_USER
-	--with-fpm-group=$PHP_GROUP
+	--with-pear=$PHP_PREFIX/pear \
+	--enable-sockets \
+	--enable-soap \
+	--with-openssl \
+	--disable-posix \
+	--without-sqlite \
+	--without-sqlite3 \
+	--with-mysqli=mysqlnd \
+	--disable-posix \
+	--disable-phar \
+	--disable-pdo \
+	--enable-pcntl \
+	--with-curl \
+	--enable-fpm \
+	--with-fpm-user=$PHP_USER \
+	--with-fpm-group=$PHP_GROUP \
 
 configure:
 	./configure $OPTS
