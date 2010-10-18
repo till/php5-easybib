@@ -9,7 +9,7 @@ PHP_PREFIX=/usr/local
 prefix=$PHP_PREFIX
 
 override_dh_auto_configure:
-	dh_auto_configure -- \
+	./configure \
 		--with-config-file-path=${PHP_PREFIX}/etc --with-config-file-scan-dir=${PHP_PREFIX}/etc/php \
 		--prefix=${PHP_PREFIX} \
 		--with-pear=${PHP_PREFIX}/pear \
@@ -31,6 +31,7 @@ override_dh_auto_configure:
 override_dh_auto_test:
 
 override_dh_auto_install:
+	$(MAKE) INSTALL_ROOT=${CURDIR}/debian/php5-easybib
 
 %:
 	dh  $@
