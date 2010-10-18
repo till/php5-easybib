@@ -31,7 +31,7 @@ override_dh_auto_configure:
 override_dh_auto_test:
 
 override_dh_auto_install:
-	$(MAKE) INSTALL_ROOT=${CURDIR}/debian/php5-easybib
+	$(MAKE) install INSTALL_ROOT=${CURDIR}/debian/php5-easybib
 
 %:
 	dh  $@
