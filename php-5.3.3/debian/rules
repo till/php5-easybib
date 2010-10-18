@@ -5,7 +5,7 @@
 
 PHP_USER=www-data
 PHP_GROUP=www-data
-PHP_PREFIX=/usr
+PHP_PREFIX=/usr/local
 prefix=$PHP_PREFIX
 
 override_dh_auto_configure:
@@ -29,6 +29,8 @@ override_dh_auto_configure:
 		--enable-fpm --with-fpm-user=${PHP_USER} --with-fpm-group=${PHP_GROUP}
 
 override_dh_auto_test:
+
+override_dh_auto_install:
 
 %:
 	dh  $@
