@@ -29,6 +29,7 @@ override_dh_auto_configure:
 		--enable-fpm --with-fpm-user=${PHP_USER} --with-fpm-group=${PHP_GROUP}
 
 override_dh_auto_test:
+	# disabled
 
 override_dh_auto_install:
 	$(MAKE) install INSTALL_ROOT=${CURDIR}/debian/php5-easybib
