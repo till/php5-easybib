@@ -9,20 +9,35 @@
  * installed in: `/usr/local`
  * PEAR: `/usr/local/pear`
  * Extensions
+   * ctype
+   * curl
+   * date
+   * dom
+   * fileinfo
+   * filter
+   * json
+   * iconv
+   * hash
+   * mysqli (mysqlnd)
+   * openssl
+   * pcntl
+   * pcre
+   * reflection
+   * session
+   * simplexml
    * sockets
    * soap
-   * openssl
+   * spl
    * tidy
-   * pcntl
-   * curl
-   * mysqli (mysqlnd)
+   * tokenizer
+   * xmlreader
+   * xmlwriter
  * Disabled extensions:
    * posix
    * sqlite
    * sqlite3
    * phar
    * pdo
-
  * Disabled features:
    * short tags
    * ipv6
